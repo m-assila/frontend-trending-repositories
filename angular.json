@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TrendingRepositories"
+    }
+  },
+  "defaultProject": "TrendingRepositories",
+  "cli": {
+    "analytics": false
+  }
 }
