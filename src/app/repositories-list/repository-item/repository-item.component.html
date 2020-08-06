@@ -1,1 +1,21 @@
-<p>repository-item works!</p>
+
+<div class="card col-md-12" style = "margin-top: 15px;">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-3">
+          <img [src]="repository.OwnerAvatarPath" width="150px" height="150px" alt="avatar">
+        </div>
+  
+        <div class="col-md-9">
+          <h5 class="card-title"> {{repository.RepositoryName}}</h5>
+          <p class="card-text"> {{repository.RepositoryDescription}}</p>
+          <a  class="btn btn-light" *ngIf="repository.Nbstars >=1000" > Stars: {{ repository.Nbstars/1000 | number: '1.1-1' }}K</a>
+          <a  class="btn btn-light" *ngIf="repository.Nbstars < 1000"> Stars: {{ repository.Nbstars }}</a>
+          <a  class="btn btn-light" style="margin-left: 5px; margin-right: 10px; width: 100px;" *ngIf="repository.Nbissues >= 1000"> Issues {{repository.Nbissues/1000 | number: '1.1-1' }}K</a>
+          <a  cclass="btn btn-light" style="margin-left: 5px; margin-right: 10px; width: 100px;" *ngIf="repository.Nbissues<1000"> Issues {{repository.Nbissues  }}</a>
+          Submitted 30 days ago by {{ repository.OwnerName}}
+  </div>
+  </div>
+  </div>
+  </div>
+  

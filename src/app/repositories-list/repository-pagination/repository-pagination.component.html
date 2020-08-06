@@ -1,1 +1,13 @@
-<p>repository-pagination works!</p>
+<nav aria-label="Page navigation " style="margin: 20px;">
+    <ul class="pagination justify-content-center">
+      <li class="page-item ">
+        <button class="page-link"  (click)="onChange(presentPage -1)" [disabled]="presentPage == 1" >Previous Page</button>
+      </li>
+      <li class="page-item active"><a class="page-link" (click)="onChange(presentPage )">{{presentPage}}</a></li>
+      <li class="page-item "><a class="page-link" (click)="onChange(presentPage+1)"  > {{ presentPage +1 }}</a></li>
+      <li class="page-item"><a class="page-link" (click)="onChange(presentPage +2)" >{{presentPage +2}}</a></li>
+      <li class="page-item">
+        <button class="page-link" (click)="onChange(presentPage +1)">Next Page</button>
+      </li>
+    </ul>
+  </nav>

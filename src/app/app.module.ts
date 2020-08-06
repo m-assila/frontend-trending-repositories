@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RepositoriesListComponent } from './repositories-list/repositories-list.component';
 import { RepositoryItemComponent } from './repositories-list/repository-item/repository-item.component';
 import { RepositoryPaginationComponent } from './repositories-list/repository-pagination/repository-pagination.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RepositoryPaginationComponent } from './repositories-list/repository-pa
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
