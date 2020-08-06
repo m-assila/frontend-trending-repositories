@@ -3,11 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RepsitoriesListComponent } from './repsitories-list/repsitories-list.component';
+import { RepositoriesListComponent } from './repositories-list/repositories-list.component';
+import { RepositoryItemComponent } from './repositories-list/repository-item/repository-item.component';
+import { RepositoryPaginationComponent } from './repositories-list/repository-pagination/repository-pagination.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    RepsitoriesListComponent,
+    RepositoriesListComponent,
+    RepositoryItemComponent,
+    RepositoryPaginationComponent,
   ],
   imports: [
     BrowserModule,
