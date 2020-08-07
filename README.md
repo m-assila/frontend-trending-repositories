@@ -1,6 +1,14 @@
 # TrendingRepositories
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+It's a single web application to list the most trending repositories. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+
+## Why choosing Angular ?
+
+Angular helps build interactive and dynamic single page applications (SPAs). Its component-based structure helps us to write readable, maintainable, and easy-to-use code.
+
+## Install the dependencies
+
+run npm install to install the dependencies in the local node_modules folder.
 
 ## Development server
 
